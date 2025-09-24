@@ -264,8 +264,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 1090357824}
     m_Modifications:
     - target: {fileID: 443015711320446594, guid: 88696edaf9c674c45bc8db874c68a918, type: 3}
+      propertyPath: m_text
+      value: 'Potatoes: '
+      objectReference: {fileID: 0}
+    - target: {fileID: 443015711320446594, guid: 88696edaf9c674c45bc8db874c68a918, type: 3}
       propertyPath: m_fontSize
       value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 443015711320446594, guid: 88696edaf9c674c45bc8db874c68a918, type: 3}
+      propertyPath: m_margin.w
+      value: 122.501884
+      objectReference: {fileID: 0}
+    - target: {fileID: 443015711320446594, guid: 88696edaf9c674c45bc8db874c68a918, type: 3}
+      propertyPath: m_margin.x
+      value: 238.65761
+      objectReference: {fileID: 0}
+    - target: {fileID: 443015711320446594, guid: 88696edaf9c674c45bc8db874c68a918, type: 3}
+      propertyPath: m_margin.z
+      value: 263.73035
       objectReference: {fileID: 0}
     - target: {fileID: 443015711320446594, guid: 88696edaf9c674c45bc8db874c68a918, type: 3}
       propertyPath: m_fontSizeBase
@@ -355,6 +371,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: CurrencyUI
       objectReference: {fileID: 0}
+    - target: {fileID: 2257545671354164051, guid: 88696edaf9c674c45bc8db874c68a918, type: 3}
+      propertyPath: m_Name
+      value: Peeled
+      objectReference: {fileID: 0}
+    - target: {fileID: 3604588192749763515, guid: 88696edaf9c674c45bc8db874c68a918, type: 3}
+      propertyPath: m_Name
+      value: Potatoes
+      objectReference: {fileID: 0}
     - target: {fileID: 4655473456086732529, guid: 88696edaf9c674c45bc8db874c68a918, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0.5
@@ -372,16 +396,44 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 5182568676688557113, guid: 88696edaf9c674c45bc8db874c68a918, type: 3}
+      propertyPath: m_text
+      value: 'Peeled:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5182568676688557113, guid: 88696edaf9c674c45bc8db874c68a918, type: 3}
       propertyPath: m_fontSize
       value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5182568676688557113, guid: 88696edaf9c674c45bc8db874c68a918, type: 3}
+      propertyPath: m_margin.w
+      value: 125.80079
       objectReference: {fileID: 0}
     - target: {fileID: 5182568676688557113, guid: 88696edaf9c674c45bc8db874c68a918, type: 3}
       propertyPath: m_fontSizeBase
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 6286099347965922493, guid: 88696edaf9c674c45bc8db874c68a918, type: 3}
+      propertyPath: m_Name
+      value: Potates
+      objectReference: {fileID: 0}
+    - target: {fileID: 6881769995126500849, guid: 88696edaf9c674c45bc8db874c68a918, type: 3}
+      propertyPath: m_text
+      value: 'Potates: '
+      objectReference: {fileID: 0}
     - target: {fileID: 6881769995126500849, guid: 88696edaf9c674c45bc8db874c68a918, type: 3}
       propertyPath: m_fontSize
       value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 6881769995126500849, guid: 88696edaf9c674c45bc8db874c68a918, type: 3}
+      propertyPath: m_margin.w
+      value: 125.33367
+      objectReference: {fileID: 0}
+    - target: {fileID: 6881769995126500849, guid: 88696edaf9c674c45bc8db874c68a918, type: 3}
+      propertyPath: m_margin.x
+      value: 248.87253
+      objectReference: {fileID: 0}
+    - target: {fileID: 6881769995126500849, guid: 88696edaf9c674c45bc8db874c68a918, type: 3}
+      propertyPath: m_margin.z
+      value: 292.51788
       objectReference: {fileID: 0}
     - target: {fileID: 6881769995126500849, guid: 88696edaf9c674c45bc8db874c68a918, type: 3}
       propertyPath: m_fontSizeBase

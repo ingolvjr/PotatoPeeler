@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using UnityEngine;
 
 public class Click : MonoBehaviour
@@ -10,6 +12,25 @@ public class Click : MonoBehaviour
 
     public void Peel()
     {
-        peeledPotatoes++;
+        if (potatoes > 0)
+        {
+            peeledPotatoes++;
+            potatoes--;
+        }
+    }
+
+    private void Start()
+    {
+        StartCoroutine(_growPotatoes());
+    }
+
+    private IEnumerator _growPotatoes()
+    {
+        while (true)
+        {
+
+            yield return new WaitForSeconds(1);
+            potatoes++;
+        }
     }
 }
