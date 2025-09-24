@@ -9,7 +9,7 @@ public class Farmhand : MonoBehaviour
     
     //Farmhand Grower
     public bool farmhandGrowerHired;
-    public int farmhandAmount;
+    public int farmhandGrowerAmount;
     private float _farmhandGrowerTimer = 5f;
     
     //Farmhand Peeler
