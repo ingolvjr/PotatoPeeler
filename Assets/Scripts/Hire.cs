@@ -5,9 +5,9 @@ using TMPro;
 public class Hire : MonoBehaviour
 {
     //Pricing variables
-    public int farmhandGrowerPrice;
-    public int farmhandPeelerPrice;
-    public int potatoSellerPrice;
+    public int farmhandGrowerPrice = 10;
+    public int farmhandPeelerPrice = 10;
+    public int potatoSellerPrice = 10;
     
     
     //Texts
