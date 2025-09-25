@@ -47,7 +47,7 @@ public class Farmhand : MonoBehaviour
     //Farmhand peeler peels potatoes
     public IEnumerator FarmhandPeeler()
     {
-        while (farmhandPeelerHired)
+        while (farmhandPeelerHired && _click.potatoes > 0)
         {
             yield return new WaitForSeconds(farmhandPeelerTimer);
             _click.potatoes -= farmhandPeelerEarn * farmhandPeelerAmount;
