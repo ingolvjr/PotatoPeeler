@@ -41,11 +41,15 @@ public class Click : MonoBehaviour
     //Passive Potates income
     private IEnumerator _sellPeelPotatoes()
     {
-        while (true)
+        if (peeledPotatoes > 0)
         {
-            yield return new WaitForSeconds(3);
-            peeledPotatoes -= potatesMultiplier;
-            potates += potatesMultiplier;
+            while (true)
+            {
+                yield return new WaitForSeconds(3);
+                peeledPotatoes -= potatesMultiplier;
+                potates += potatesMultiplier;
+            }
         }
+        
     }
 }
