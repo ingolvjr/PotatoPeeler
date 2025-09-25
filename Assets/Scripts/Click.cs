@@ -26,6 +26,7 @@ public class Click : MonoBehaviour
         StartCoroutine(_growPotatoes());
         StartCoroutine(_sellPeelPotatoes());
     }
+    
 
     //Passive Potato growth
     private IEnumerator _growPotatoes()
@@ -56,6 +57,8 @@ public class Click : MonoBehaviour
 
     void Update()
     {
-        
+        potates = Mathf.Clamp(potates, 0, 100000000);
+        potatoes = Mathf.Clamp(potatoes, 0, 10000000);
+        peeledPotatoes = Mathf.Clamp(peeledPotatoes, 0, 10000000);
     }
 }
