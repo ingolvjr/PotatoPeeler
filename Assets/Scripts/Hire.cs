@@ -78,7 +78,7 @@ public class Hire : MonoBehaviour
         }
     }
 
-    private void Update()
+    void Update()
     {
         growerPriceText.text = "Price: " +  farmhandGrowerPrice;
         growerAmountText.text = "Amount: " +  _farmhand.farmhandGrowerAmount;

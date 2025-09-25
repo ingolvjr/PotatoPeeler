@@ -30,7 +30,7 @@ public class Farmhand : MonoBehaviour
         _click = GetComponent<Click>();
     }
 
-    private void Update()
+    void Update()
     {
         StartCoroutine(FarmhandGrower());
         

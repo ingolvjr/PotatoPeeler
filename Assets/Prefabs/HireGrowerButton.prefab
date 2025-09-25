@@ -284,7 +284,6 @@ GameObject:
   - component: {fileID: 4364937555541851481}
   - component: {fileID: 3013452316160710347}
   - component: {fileID: 4764749214550542469}
-  - component: {fileID: -8577646146726144540}
   m_Layer: 5
   m_Name: HireGrowerButton
   m_TagString: Untagged
@@ -301,7 +300,7 @@ RectTransform:
   m_GameObject: {fileID: 5269778558738390784}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.017286085, y: 0.017286085, z: 0.017286085}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3845932526474577423}
@@ -397,7 +396,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -8577646146726144540}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Hire, Assembly-CSharp
         m_MethodName: HireGrower
         m_Mode: 1
@@ -409,27 +408,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &-8577646146726144540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5269778558738390784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b599e0b5ef392e4584fd0712e921177, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Hire
-  farmhandGrowerPrice: 10
-  farmhandPeelerPrice: 10
-  potatoSellerPrice: 10
-  growerPriceText: {fileID: 3026091617877812941}
-  growerAmountText: {fileID: 8194439307052907084}
-  peelerPriceText: {fileID: 0}
-  peelerAmountText: {fileID: 0}
-  sellerPriceText: {fileID: 0}
-  sellerAmountText: {fileID: 0}
 --- !u!1 &6162676087436848318
 GameObject:
   m_ObjectHideFlags: 0
