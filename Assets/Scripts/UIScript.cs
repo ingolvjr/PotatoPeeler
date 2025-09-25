@@ -25,8 +25,8 @@ public class UIScript : MonoBehaviour
 
     private void Update()
     {
-        _potatoText.text = "potatoes:" + potatoes.ToString();
-        _PotateText.text = "Potates:" + potates.ToString();
-        _peelText.text = "peel:" + _peeledPotatoes.ToString();
+        _potatoText.text = ":" + potatoes.ToString();
+        _PotateText.text = ":" + potates.ToString();
+        _peelText.text = ":" + _peeledPotatoes.ToString();
     }
 }

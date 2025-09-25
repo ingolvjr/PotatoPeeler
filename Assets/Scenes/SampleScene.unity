@@ -342,15 +342,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 443015711320446594, guid: 88696edaf9c674c45bc8db874c68a918, type: 3}
       propertyPath: m_margin.x
-      value: 238.65761
+      value: 366.28934
       objectReference: {fileID: 0}
     - target: {fileID: 443015711320446594, guid: 88696edaf9c674c45bc8db874c68a918, type: 3}
       propertyPath: m_margin.z
-      value: 263.73035
+      value: 244.4843
       objectReference: {fileID: 0}
     - target: {fileID: 443015711320446594, guid: 88696edaf9c674c45bc8db874c68a918, type: 3}
       propertyPath: m_fontSizeBase
       value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 443015711320446594, guid: 88696edaf9c674c45bc8db874c68a918, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2167111845163197650, guid: 88696edaf9c674c45bc8db874c68a918, type: 3}
       propertyPath: m_Pivot.x
@@ -473,8 +477,16 @@ PrefabInstance:
       value: 125.80079
       objectReference: {fileID: 0}
     - target: {fileID: 5182568676688557113, guid: 88696edaf9c674c45bc8db874c68a918, type: 3}
+      propertyPath: m_margin.x
+      value: 374.79153
+      objectReference: {fileID: 0}
+    - target: {fileID: 5182568676688557113, guid: 88696edaf9c674c45bc8db874c68a918, type: 3}
       propertyPath: m_fontSizeBase
       value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5182568676688557113, guid: 88696edaf9c674c45bc8db874c68a918, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6286099347965922493, guid: 88696edaf9c674c45bc8db874c68a918, type: 3}
       propertyPath: m_Name
@@ -494,15 +506,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6881769995126500849, guid: 88696edaf9c674c45bc8db874c68a918, type: 3}
       propertyPath: m_margin.x
-      value: 248.87253
+      value: 372.45245
       objectReference: {fileID: 0}
     - target: {fileID: 6881769995126500849, guid: 88696edaf9c674c45bc8db874c68a918, type: 3}
       propertyPath: m_margin.z
-      value: 292.51788
+      value: 279.34955
       objectReference: {fileID: 0}
     - target: {fileID: 6881769995126500849, guid: 88696edaf9c674c45bc8db874c68a918, type: 3}
       propertyPath: m_fontSizeBase
       value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 6881769995126500849, guid: 88696edaf9c674c45bc8db874c68a918, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7330491982998294973, guid: 88696edaf9c674c45bc8db874c68a918, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1320,6 +1336,7 @@ GameObject:
   - component: {fileID: 1204922079}
   - component: {fileID: 1204922078}
   - component: {fileID: 1204922077}
+  - component: {fileID: 1204922080}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1369,9 +1386,9 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1402,6 +1419,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1204922080}
+        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
+        m_MethodName: Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1204922078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1422,7 +1451,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -710790102453942388, guid: fe1e6eb14e25a094391cbee5c0f96f09, type: 3}
+  m_Sprite: {fileID: 4281352820557841499, guid: 4adcc83581f0537449bd05c69fc276d8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1440,6 +1469,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1204922075}
   m_CullTransparentMesh: 1
+--- !u!114 &1204922080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204922075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06daf3f7d1b47fd439bda94908a9b144, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonScript
+  _sprites:
+  - {fileID: 4281352820557841499, guid: 4adcc83581f0537449bd05c69fc276d8, type: 3}
+  - {fileID: 6781668009277789075, guid: 0f8c7e9ae19437647a2979d005e3e2aa, type: 3}
+  _clickScript: {fileID: 1090357820}
 --- !u!114 &1274836050 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3026091617877812941, guid: b6a61728a1a5e044897788344ec19cc6, type: 3}
