@@ -8,6 +8,7 @@ public class Click : MonoBehaviour
     public int potatoes;
     public int peeledPotatoes;
     public int potates;
+    public int clickMultiplier;
 
 
     public void Peel()
@@ -15,7 +16,7 @@ public class Click : MonoBehaviour
         if (potatoes > 0)
         {
             peeledPotatoes++;
-            potatoes--;
+            potatoes -= clickMultiplier;
         }
     }
 
@@ -30,7 +31,7 @@ public class Click : MonoBehaviour
         {
 
             yield return new WaitForSeconds(1);
-            potatoes++;
+            potatoes += clickMultiplier;;
         }
     }
 }
