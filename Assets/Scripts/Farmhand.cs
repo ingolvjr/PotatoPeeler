@@ -46,7 +46,7 @@ public class Farmhand : MonoBehaviour
         while (farmhandGrowerHired)
         {
             yield return new WaitForSeconds(_farmhandGrowerTimer);
-            potatoes++;
+            _click.potatoes++;
         }
     }
 

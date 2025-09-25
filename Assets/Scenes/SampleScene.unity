@@ -928,6 +928,8 @@ MonoBehaviour:
   potatoes: 0
   peeledPotatoes: 0
   potates: 0
+  clickMultiplier: 1
+  potatesMultiplier: 1
 --- !u!114 &1090357821
 MonoBehaviour:
   m_ObjectHideFlags: 0
