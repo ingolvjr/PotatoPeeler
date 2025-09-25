@@ -10,11 +10,13 @@ public class Farmhand : MonoBehaviour
     //Farmhand Grower
     public bool farmhandGrowerHired;
     public int farmhandGrowerAmount = 0;
+    public int farmhandGrowerEarn = 2;
     public float farmhandGrowerTimer = 5f;
     
     //Farmhand Peeler
     public bool farmhandPeelerHired;
     public int farmhandPeelerAmount = 0;
+    public int farmhandPeelerEarn = 2;
     public float farmhandPeelerTimer = 5f;
     
     //Potato seller
@@ -27,45 +29,39 @@ public class Farmhand : MonoBehaviour
 
     private void Start()
     {
-        _click = GetComponent<Click>();
+        _click = GameObject.FindGameObjectWithTag("Click").GetComponent<Click>();
     }
 
-    void Update()
-    {
-        StartCoroutine(FarmhandGrower());
-        
-        StartCoroutine(FarmhandPeeler());
-        
-        StartCoroutine(PotatoSeller());
-        
-    }
+    
 
     //Farmhand grower grows potatoes
-    private IEnumerator FarmhandGrower()
+    public IEnumerator FarmhandGrower()
     {
         while (farmhandGrowerHired)
         {
             yield return new WaitForSeconds(farmhandGrowerTimer);
-            _click.potatoes++;
+            _click.potatoes += farmhandGrowerEarn * farmhandGrowerAmount;
         }
     }
 
     //Farmhand peeler peels potatoes
-    private IEnumerator FarmhandPeeler()
+    public IEnumerator FarmhandPeeler()
     {
         while (farmhandPeelerHired)
         {
             yield return new WaitForSeconds(farmhandPeelerTimer);
-            _click.peeledPotatoes += farmhandPeelerAmount;
+            _click.potatoes -= farmhandPeelerEarn * farmhandPeelerAmount;
+            _click.peeledPotatoes += farmhandPeelerEarn * farmhandPeelerAmount;
         }
     }
     
     //Potato seller sells potatoes
-    private IEnumerator PotatoSeller()
+    public IEnumerator PotatoSeller()
     {
         while (potatoSellerHired)
         {
             yield return new WaitForSeconds(potatoSellerTimer);
+            _click.peeledPotatoes -= potatoSellerAmount;
             _click.potates += (potatoSellerEarn * potatoSellerAmount);
         }
     }

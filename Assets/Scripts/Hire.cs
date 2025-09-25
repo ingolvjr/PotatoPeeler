@@ -25,8 +25,10 @@ public class Hire : MonoBehaviour
 
     private void Start()
     {
-        _click = GetComponent<Click>();
-        _farmhand = GetComponent<Farmhand>();
+        _click = GetComponentInParent<Click>();
+        _farmhand = GameObject.FindGameObjectWithTag("Farmhand").GetComponent<Farmhand>();
+        
+        
     }
     
     
@@ -40,9 +42,11 @@ public class Hire : MonoBehaviour
             farmhandGrowerPrice += (farmhandGrowerPrice * 10) / 100;
             
             growerPriceText.text = "Price: " +  farmhandGrowerPrice;
-            growerAmountText.text = "Amount: " +  _farmhand.farmhandGrowerAmount;
+            growerAmountText.text = _farmhand.farmhandGrowerAmount.ToString();
             
             _farmhand.farmhandGrowerHired = true;
+            
+            StartCoroutine(_farmhand.FarmhandGrower());
         }
     }
     
@@ -56,9 +60,11 @@ public class Hire : MonoBehaviour
             farmhandPeelerPrice += (farmhandPeelerPrice * 10) / 100;
             
             peelerPriceText.text = "Price " + farmhandPeelerPrice;
-            peelerAmountText.text = "Amount " + _farmhand.farmhandPeelerAmount;
+            peelerAmountText.text = _farmhand.farmhandPeelerAmount.ToString();
             
             _farmhand.farmhandPeelerHired = true;
+            
+            StartCoroutine(_farmhand.FarmhandPeeler());
         }
     }
 
@@ -72,21 +78,13 @@ public class Hire : MonoBehaviour
             potatoSellerPrice += (potatoSellerPrice * 10) / 100;
             
             sellerPriceText.text = "Price " + potatoSellerPrice;
-            sellerAmountText.text = "Amount " + _farmhand.potatoSellerAmount;
+            sellerAmountText.text = _farmhand.potatoSellerAmount.ToString();
             
             _farmhand.potatoSellerHired = true;
+            
+            StartCoroutine(_farmhand.PotatoSeller());
         }
     }
 
-    void Update()
-    {
-        growerPriceText.text = "Price: " +  farmhandGrowerPrice;
-        growerAmountText.text = "Amount: " +  _farmhand.farmhandGrowerAmount;
-        
-        peelerPriceText.text = "Price " + farmhandPeelerPrice;
-        peelerAmountText.text = "Amount " + _farmhand.farmhandPeelerAmount;
-        
-        sellerPriceText.text = "Price " + potatoSellerPrice;
-        sellerAmountText.text = "Amount " + _farmhand.potatoSellerAmount;
-    }
+  
 }

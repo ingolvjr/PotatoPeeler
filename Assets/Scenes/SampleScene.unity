@@ -808,7 +808,7 @@ Transform:
   m_GameObject: {fileID: 908253083}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -96.0958, y: 16.064945, z: -5206.5}
+  m_LocalPosition: {x: -96.0958, y: -20, z: -5206.5}
   m_LocalScale: {x: 57.850002, y: 57.850002, z: 57.850002}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -858,7 +858,7 @@ GameObject:
   - component: {fileID: 1090357820}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: Click
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1321,7 +1321,7 @@ GameObject:
   - component: {fileID: 1982095070}
   m_Layer: 0
   m_Name: Farmhand
-  m_TagString: Untagged
+  m_TagString: Farmhand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1341,11 +1341,16 @@ MonoBehaviour:
   potatoes: 0
   farmhandGrowerHired: 0
   farmhandGrowerAmount: 0
+  farmhandGrowerEarn: 2
+  farmhandGrowerTimer: 5
   farmhandPeelerHired: 0
   farmhandPeelerAmount: 0
+  farmhandPeelerEarn: 2
+  farmhandPeelerTimer: 5
   potatoSellerHired: 0
   potatoSellerAmount: 0
   potatoSellerEarn: 15
+  potatoSellerTimer: 10
 --- !u!4 &1982095071
 Transform:
   m_ObjectHideFlags: 0
