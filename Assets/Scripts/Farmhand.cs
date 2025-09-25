@@ -10,18 +10,18 @@ public class Farmhand : MonoBehaviour
     //Farmhand Grower
     public bool farmhandGrowerHired;
     public int farmhandGrowerAmount = 0;
-    private float _farmhandGrowerTimer = 5f;
+    public float farmhandGrowerTimer = 5f;
     
     //Farmhand Peeler
     public bool farmhandPeelerHired;
     public int farmhandPeelerAmount = 0;
-    private float _farmhandPeelerTimer = 5f;
+    public float farmhandPeelerTimer = 5f;
     
     //Potato seller
     public bool potatoSellerHired;
     public int potatoSellerAmount = 0;
     public int potatoSellerEarn = 15;
-    private float _potatoSellerTimer = 10f;
+    public float potatoSellerTimer = 10f;
 
 
 
@@ -45,7 +45,7 @@ public class Farmhand : MonoBehaviour
     {
         while (farmhandGrowerHired)
         {
-            yield return new WaitForSeconds(_farmhandGrowerTimer);
+            yield return new WaitForSeconds(farmhandGrowerTimer);
             _click.potatoes++;
         }
     }
@@ -55,7 +55,7 @@ public class Farmhand : MonoBehaviour
     {
         while (farmhandPeelerHired)
         {
-            yield return new WaitForSeconds(_farmhandPeelerTimer);
+            yield return new WaitForSeconds(farmhandPeelerTimer);
             _click.peeledPotatoes += farmhandPeelerAmount;
         }
     }
@@ -65,7 +65,7 @@ public class Farmhand : MonoBehaviour
     {
         while (potatoSellerHired)
         {
-            yield return new WaitForSeconds(_potatoSellerTimer);
+            yield return new WaitForSeconds(potatoSellerTimer);
             _click.potates += (potatoSellerEarn * potatoSellerAmount);
         }
     }
