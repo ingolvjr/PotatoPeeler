@@ -420,9 +420,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b599e0b5ef392e4584fd0712e921177, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hire
-  farmhandGrowerPrice: 0
-  farmhandPeelerPrice: 0
-  potatoSellerPrice: 0
+  farmhandGrowerPrice: 10
+  farmhandPeelerPrice: 10
+  potatoSellerPrice: 10
   growerPriceText: {fileID: 3026091617877812941}
   growerAmountText: {fileID: 8194439307052907084}
   peelerPriceText: {fileID: 0}
