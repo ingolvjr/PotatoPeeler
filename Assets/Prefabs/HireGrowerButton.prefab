@@ -284,6 +284,7 @@ GameObject:
   - component: {fileID: 4364937555541851481}
   - component: {fileID: 3013452316160710347}
   - component: {fileID: 4764749214550542469}
+  - component: {fileID: -8577646146726144540}
   m_Layer: 5
   m_Name: HireGrowerButton
   m_TagString: Untagged
@@ -394,7 +395,40 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3013452316160710347}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -8577646146726144540}
+        m_TargetAssemblyTypeName: Hire, Assembly-CSharp
+        m_MethodName: HireGrower
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &-8577646146726144540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5269778558738390784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b599e0b5ef392e4584fd0712e921177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Hire
+  farmhandGrowerPrice: 0
+  farmhandPeelerPrice: 0
+  potatoSellerPrice: 0
+  growerPriceText: {fileID: 3026091617877812941}
+  growerAmountText: {fileID: 8194439307052907084}
+  peelerPriceText: {fileID: 0}
+  peelerAmountText: {fileID: 0}
+  sellerPriceText: {fileID: 0}
+  sellerAmountText: {fileID: 0}
 --- !u!1 &6889205550289894084
 GameObject:
   m_ObjectHideFlags: 0
