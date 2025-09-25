@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: baeb9cb9f5f9db04ea7d0203890e473c
+guid: 8cf157d3a62359249b4adf0800a336df
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5720312273807731013
-    second: PotatoPeeledPng_0
+      213: 3751500588646532239
+    second: FrederikFarmerPng_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PotatoPeeledPng_0
+      name: FrederikFarmerPng_0
       rect:
         serializedVersion: 2
-        x: 19
+        x: 109
         y: 19
-        width: 272
-        height: 292
+        width: 102
+        height: 242
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bb612636b4e5d90b0800000000000000
-      internalID: -5720312273807731013
+      spriteID: f8402f8b8e1001430800000000000000
+      internalID: 3751500588646532239
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      PotatoPeeledPng_0: -5720312273807731013
+      FrederikFarmerPng_0: 3751500588646532239
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

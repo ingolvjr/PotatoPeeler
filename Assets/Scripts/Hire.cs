@@ -38,6 +38,11 @@ public class Hire : MonoBehaviour
             _click.potates -= farmhandGrowerPrice;
             _farmhand.farmhandGrowerAmount++;
             farmhandGrowerPrice += (farmhandGrowerPrice * 10) / 100;
+            
+            growerPriceText.text = "Price: " +  farmhandGrowerPrice;
+            growerAmountText.text = "Amount: " +  _farmhand.farmhandGrowerAmount;
+            
+            _farmhand.farmhandGrowerHired = true;
         }
     }
     
@@ -49,6 +54,11 @@ public class Hire : MonoBehaviour
             _click.potates -= farmhandPeelerPrice;
             _farmhand.farmhandPeelerAmount++;
             farmhandPeelerPrice += (farmhandPeelerPrice * 10) / 100;
+            
+            peelerPriceText.text = "Price " + farmhandPeelerPrice;
+            peelerAmountText.text = "Amount " + _farmhand.farmhandPeelerAmount;
+            
+            _farmhand.farmhandPeelerHired = true;
         }
     }
 
@@ -60,10 +70,15 @@ public class Hire : MonoBehaviour
             _click.potates -= potatoSellerPrice;
             _farmhand.potatoSellerAmount++;
             potatoSellerPrice += (potatoSellerPrice * 10) / 100;
+            
+            sellerPriceText.text = "Price " + potatoSellerPrice;
+            sellerAmountText.text = "Amount " + _farmhand.potatoSellerAmount;
+            
+            _farmhand.potatoSellerHired = true;
         }
     }
 
-    private void Update()
+    void Update()
     {
         growerPriceText.text = "Price: " +  farmhandGrowerPrice;
         growerAmountText.text = "Amount: " +  _farmhand.farmhandGrowerAmount;

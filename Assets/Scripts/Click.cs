@@ -9,8 +9,9 @@ public class Click : MonoBehaviour
     public int peeledPotatoes;
     public int potates;
     public int clickMultiplier;
+    public int potatesMultiplier;
 
-
+    //Peel
     public void Peel()
     {
         if (potatoes > 0)
@@ -23,8 +24,10 @@ public class Click : MonoBehaviour
     private void Start()
     {
         StartCoroutine(_growPotatoes());
+        StartCoroutine(_sellPeelPotatoes());
     }
 
+    //Passive Potato growth
     private IEnumerator _growPotatoes()
     {
         while (true)
@@ -32,6 +35,27 @@ public class Click : MonoBehaviour
 
             yield return new WaitForSeconds(1);
             potatoes += clickMultiplier;;
+        } 
+    }
+
+    //Passive Potates income
+    private IEnumerator _sellPeelPotatoes()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(3);
+            if (peeledPotatoes > 0)
+            {
+                peeledPotatoes -= potatesMultiplier;
+                potates += potatesMultiplier;
+            }
+                
         }
+        
+    }
+
+    void Update()
+    {
+        
     }
 }
