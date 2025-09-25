@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Rendering;
+using TMPro;
 
 public class Hire : MonoBehaviour
 {
@@ -7,6 +8,15 @@ public class Hire : MonoBehaviour
     public int farmhandGrowerPrice;
     public int farmhandPeelerPrice;
     public int potatoSellerPrice;
+    
+    
+    //Texts
+    public TMP_Text growerPriceText;
+    public TMP_Text growerAmountText;
+    public TMP_Text peelerPriceText;
+    public TMP_Text peelerAmountText;
+    public TMP_Text sellerPriceText;
+    public TMP_Text sellerAmountText;
 
     //Getting scripts
     private Click _click;
@@ -51,5 +61,17 @@ public class Hire : MonoBehaviour
             _farmhand.potatoSellerAmount++;
             potatoSellerPrice += (potatoSellerPrice * 10) / 100;
         }
+    }
+
+    private void Update()
+    {
+        growerPriceText.text = "Price: " +  farmhandGrowerPrice;
+        growerAmountText.text = "Amount: " +  _farmhand.farmhandGrowerAmount;
+        
+        peelerPriceText.text = "Price " + farmhandPeelerPrice;
+        peelerAmountText.text = "Amount " + _farmhand.farmhandPeelerAmount;
+        
+        sellerPriceText.text = "Price " + potatoSellerPrice;
+        sellerAmountText.text = "Amount " + _farmhand.potatoSellerAmount;
     }
 }
